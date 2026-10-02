@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>アクセス解析テストサイト</title>
+
+    <!-- Google Analytics 4 -->
+    <!-- G-XXXXXXXXXX を自分の測定IDに変更してください -->
+    <!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FRPMDWEF4Q"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-FRPMDWEF4Q');
+</script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Web Analytics Lab</h1>
+
+            <nav>
+                <a href="#home">ホーム</a>
+                <a href="#about">サイトについて</a>
+                <a href="#contact">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="container">
+                <p class="label">WEB ANALYTICS</p>
+
+                <h2>
+                    Webサイトの<br>
+                    アクセス解析テスト
+                </h2>
+
+                <p class="description">
+                    Google Analytics 4を利用して、
+                    Webサイトへのアクセスデータを計測するためのテストサイトです。
+                </p>
+
+                <a href="#about" class="button">サイトについて</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+
+                <h2>このサイトについて</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>アクセス解析</h3>
+                        <p>
+                            Webサイトへのアクセス状況を
+                            Google Analytics 4で計測します。
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>データ分析</h3>
+                        <p>
+                            ユーザー数やセッション数、
+                            ページビューなどのデータを確認します。
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>レポート作成</h3>
+                        <p>
+                            取得したデータをLooker Studioで
+                            グラフやレポートとして表示します。
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <h2>お問い合わせ</h2>
+
+                <p>
+                    アクセス解析システムのテスト用ページです。
+                </p>
+
+                <button onclick="showMessage()">
+                    テストボタン
+                </button>
+
+                <p id="message"></p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Analytics Lab</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "ボタンがクリックされました。";
+        }
+    </script>
+
+</body>
+</html>
